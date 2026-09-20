@@ -46,6 +46,7 @@ def evaluate():
     figs = []
 
     # ── Apply and plot filters ────────────────────────────────────────────────
+    
     def _make_panel(image, label):
         blurred   = proc.add_blur(image, ksize=15)
         sharpened = proc.add_sharpen(image, strength=1.5)
